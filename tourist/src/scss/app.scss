@@ -1,0 +1,59 @@
+// Global options
+$enable-gradients: true;
+$enable-shadows: true;
+$enable-rounded: true;
+
+// Customize defaults
+$theme-colors: (
+	primary: #26bb13,
+	secondary: #32a107,
+);
+
+@import "../../../node_modules/bootstrap/scss/bootstrap";
+
+//
+// Custom styles
+//
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Roboto&display=swap');
+
+html, body {
+	font-family: 'Roboto', sans-serif;
+	min-height: 100%;
+}
+
+.side-info {
+	font-family: 'Nunito', sans-serif;
+	box-shadow: 0 0rem 1rem rgba(0,0,0,0.175) !important;
+}
+
+footer a, a:hover {
+	color: white;
+	text-decoration: underline;
+}
+
+/* Mobile and default*/
+#map-container {
+	width: 100%;
+	height: 65vh;
+}
+
+/* On non-mobile devices */
+@media (min-width: 768px) {
+	#map-container {
+		height: 100%;
+		min-height: 95vh;
+	}
+}
+
+.twitter-share-button, .fb-share-button {
+	vertical-align: text-bottom;
+}
+
+#map-tooltip {
+	font-family: 'Nunito', sans-serif;
+}
+
+form label {
+	font-weight: bold;
+}

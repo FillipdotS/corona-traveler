@@ -1,0 +1,36 @@
+{
+  "name": "coronatourist",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-dev": "webpack --mode development --devtool source-map ./tourist/src/index.js --output ./tourist/static/build/main.js",
+    "build": "webpack --mode production ./tourist/src/index.js --output ./tourist/static/build/main.js",
+    "css-watch": "node-sass --include-path node_modules --output-style compressed --source-map true --source-map-contents true --precision 6 -w tourist/src/scss -o tourist/static/css/",
+    "css-compile": "node-sass --include-path node_modules --output-style compressed --precision 6 tourist/src/scss -o tourist/static/css/"
+  },
+  "author": "Fillip Serov",
+  "license": "ISC",
+  "dependencies": {
+    "@amcharts/amcharts4": "^4.9.24",
+    "@amcharts/amcharts4-geodata": "^4.1.15",
+    "@babel/plugin-transform-runtime": "^7.10.1",
+    "@babel/runtime": "^7.10.2",
+    "axios": "^0.19.2",
+    "bootstrap": "^4.5.0",
+    "jquery": "^3.5.1",
+    "node-sass": "^4.14.1",
+    "popper.js": "^1.16.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.10.2",
+    "@babel/preset-env": "^7.10.2",
+    "@babel/preset-react": "^7.10.1",
+    "babel-loader": "^8.1.0",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11"
+  }
+}

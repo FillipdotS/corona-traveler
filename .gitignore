@@ -1,0 +1,30 @@
+# Some defaults
+*.sqlite3
+node_modules
+.vscode
+
+# Ignore migrations for now
+migrations
+
+# Some default django ignores
+*.egg-info
+*.pot
+*.py[co]
+.tox/
+__pycache__
+MANIFEST
+dist/
+docs/_build/
+docs/locale/
+node_modules/
+tests/coverage_html/
+tests/.coverage
+build/
+tests/report/
+*.db
+
+# Should be built
+tourist/static/main.js
+tourist/static/main.js.map
+tourist/static/css/app.css
+tourist/static/css/app.css.map

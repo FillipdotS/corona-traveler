@@ -1,0 +1,16 @@
+{% extends './base.html' %}
+{% load static %}
+
+{% block title %}Coronavirus travel restriction map{% endblock title %}
+
+{% block description %}An interactive map of coronavirus travel restrictions. Check out where you can travel from your country!{% endblock description %}
+
+{% block extrahead %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/app.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/flags.css' %}">
+{% endblock extrahead %}
+
+{% block content %}
+    <div id="app"></div>
+    <script src="{% static 'build/main.js' %}"></script>
+{% endblock content %}
